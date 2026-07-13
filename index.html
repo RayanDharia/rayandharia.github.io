@@ -1,20 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title> Rayan Dharia's Website </title>
-    </head>
-    <body>
-        <h1 class="text"> Welcome to Rayan Dharia's Website! </h1>
-        <p class="text"> I am currently learning how to make a website. Here is a list of things I want to have on this website:</p>
-        <menu>
-            <li>Short front page with navigation and about</li>
-            <li>Hyperlinks</li>
-            <li>Website icon</li>
-            <li>Current Projects</li>
-            <li>Background theme</li>
-            <li>Interests?</li>
-          </menu>
-        <script src="main.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rayan Dharia | Blog</title>
+  <meta
+    name="description"
+    content="Rayan Dharia's personal blog about projects, ideas, learning, and other interests."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html" aria-label="Rayan Dharia home">
+        Rayan Dharia
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#posts">Blog</a>
+        <a href="#about">About</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Personal blog</p>
+        <h1>Notes on projects, learning, and whatever I am exploring.</h1>
+        <p class="hero-text">
+          A simple collection of my writing, current projects, and ideas.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="posts">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Writing</p>
+          <h2>Latest posts</h2>
+        </div>
+
+        <div class="post-list">
+          <!--
+            To add a new post:
+            1. Duplicate posts/post-template.html.
+            2. Rename it, for example posts/my-new-post.html.
+            3. Edit the title, date, description, and article.
+            4. Copy this <article> block and place the newest post first.
+          -->
+          <article class="post-card">
+            <p class="post-meta">
+              <time datetime="2026-07-12">July 12, 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>2 min read</span>
+            </p>
+
+            <h3>
+              <a href="posts/welcome.html">Welcome to my blog</a>
+            </h3>
+
+            <p>
+              Why I created this site and what I plan to write about here.
+            </p>
+
+            <a class="read-more" href="posts/welcome.html">
+              Read post <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h2>About this site</h2>
+        <p>
+          This is a manually maintained HTML blog hosted with GitHub Pages.
+          I use it to share projects, interests, lessons, and ideas as I learn.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-current-year>2026</span> Rayan Dharia</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
 </html>
