@@ -134,7 +134,7 @@ a {
 }
 
 .hero {
-  padding: clamp(5rem, 11vw, 9rem) 0 clamp(4rem, 8vw, 7rem);
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(2rem, 5vw, 4rem);
 }
 
 .hero-content {
@@ -161,7 +161,7 @@ h3 {
 h1 {
   max-width: 850px;
   margin-bottom: 1.5rem;
-  font-size: clamp(2.7rem, 7vw, 5.7rem);
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 h2 {
@@ -182,7 +182,7 @@ h3 {
 }
 
 .section {
-  padding: clamp(4rem, 8vw, 7rem) 0;
+  padding: clamp(2rem, 5vw, 4rem) 0;
   border-top: 1px solid var(--border);
 }
 
