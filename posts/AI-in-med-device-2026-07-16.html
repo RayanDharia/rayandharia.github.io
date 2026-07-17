@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Change the browser title and description for every post. -->
+  <title>Using AI as a Medical Device Professional? | Rayan Dharia</title>
+  <meta name="Using AI as a Medical Device Professional" content="Using AI as a medical device professional has many more pitfalls than advantages.">
+
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="../index.html">Rayan Dharia</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html#posts">Blog</a>
+        <a href="../index.html#about">About</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article-shell">
+    <article class="container">
+      <header class="article-header">
+        <a class="back-link" href="../index.html">← All posts</a>
+
+        <p class="post-meta">
+          <!-- Use YYYY-MM-DD in datetime, but write the date normally on screen. -->
+          <time datetime="2026-07-16">July 16, 2026</time>
+          <span aria-hidden="true">·</span>
+          <span>6 min read</span>
+        </p>
+
+        <h1>Using AI as a Medical Device Professional?</h1>
+        <p class="article-description">AI has made certain things a lot easier, but that doesn't necessarily mean it's quality.</p>
+      </header>
+
+      <div class="article-body">
+        <p>
+          I was guilty of overrelying on AI as a medical device professional over the first few months that I started working.
+          It was so nice to know that my limited idea of how something works is actually correct and implementing it would make things better.
+          As it would turn out, AI has very little clue as to what it is doing in the medical device world from an engineering, quality, and regulatory perspective.
+        </p>
+
+        <h2>My Personal Experience with AI Use</h2>
+
+        <p>
+          In this section, I'm going to revisit a few times in my early days that I overrelied on AI and how I would do things differently today.
+        </p>
+
+        <h3>Supplier Management</h3>
+
+        <p>
+          As a small company, we rely on external suppliers heavily. Quality control guidelines require that a medical device manufacture maintain control over their suppliers in a manner compliant with ISO 13485.
+          There are many ways to interpret this, but the way I have chosen to is as follows:
+          <ul>
+          <li>A suppliers scope must be approved. Suppliers cannot operate outside of their scope without documented approval.</li>
+          <li>A supplier must have some form of proof that they are qualified to their scope. This evidence is less burdensome the less risk the supplier has for us.</li>
+          <li>Any suppliers used in any medical device-related capacity must be approved before their work can begin</li>
+        </ul>
+          I inherited a system that generally followed the guidelines but certainly needed some work to better streamline these activities.
+          One of the pain points for me was the "Supplier Quality Agreement". See, when you work closely with a supplier, one great way of getting evidence that they are qualified is to present them with a supplier quality agreement.
+          It is essentially a set of terms that the both of us must follow. For example, a contract manufacturer should allow themselves to be audited by us. Occasionally you'll get a supplier who doesn't want to sign one of these and that tells you everything you need to know.
+          My problem was that the stock supplier agreement we had didn't give us coverage for suppliers such as clinical experts.
+          So, I set out to ChatGPT to figure out a better system, and to its credit it came up with a pretty solid one. There is a base agreement with these more specific schedules that get attached to the main agreement depending on the type of supplier.
+          The issue is that it also advised that these become controlled extensions of the supplier management SOP. While there is nothing wrong with this (as I stated before there are a bunch of ways to maintain compliance), it's annoying that any changes that any suppliers want means that I am changing a controlled document. 
+          I had no idea about what my future with these supplier quality agreements looked like. Clearly neither did ChatGPT.
+        </p>
+
+        <h3>External Standards</h3>
+
+        <p>
+          The last one was pretty tame. There's no nonconformity that would result in this system. Now we are in nonconformity territory.
+        </p>
+
+        <p>
+          See, this goes into the fundamental way that we create medical devices. As one would guess, the process from conceptualization to commercialization is not random in the medical device world.
+          There is a general set of guidelines and standards that must be followed / complied with, with a majority of them being published by a governmental agency (FDA, EU, etc) or an international standards body (ISO, IEC, etc.). 
+          You have to show evidence that you have applied the appropriate standards for your device. I'm not as well-versed with the FDA yet, but the EU makes some of its requirements pretty clear through its annexes. For example, MDR Annex VIII is how you determine the risk classification for your device.
+          I remember being taught in school about the FDAs system and how it was like try your best to guess based on the fact that a tounge depressor is class 1 and a pacemaker is class 3. Honestly I'm not sure if thats the way but thats not how it is for the EU. 
+          Anyways, our documentation had a pretty good reference back to the appropriate standard(s) used, but I wanted a unified registry of standards that we reference. Almost like a master list.
+          So, I gathered my fingers, slow to move (because its cold and I'm cold-blooded), and poked away at my keyboard. What I found was horrifying.
+        </p>
+
+        <p>
+          Like I had mentioned, I had a general idea of the applicable standards because they were already referenced in documentation. The monstrosity of a list that was created was beyond anything I could image. 
+          It had standards that didn't apply, standards that did apply but had the wrong revision/date, standards that didn't exist, and some guidance documents that aren't even standards. It didn't take much of that buffoonery to shut that down and start fresh. 
+          AI is great at taking a list of standards that you give it and nicely plopping it into an excel sheet. AI has no idea what the standards are.
+        </p>
+
+        <p>
+          Literally earlier today, I had a similar incident. IEC 60601-1 is the gold standard for medical electrical equipment. Because it is such a large standard, it has a ton of parts.
+          One of those parts is IEC 60601-1-2.
+          IEC 60601-1 is how we reference the name of the standard, but it is essential to also reference the version. For this standard, the current version is as follows: 
+        </p>
+        
+        <p>  
+          "IEC60601-1:2005+AMD1:2012+AMD2:2020"
+        </p>
+
+        <p>
+          Translation: IEC60601-1, published in 2005 with a first ammendment in 2012 and a second ammendment in 2020
+        </p>
+
+        <p>
+          Sometimes, a standard gets updated. When this happens, we typicall perform whats called a "gap anaylsis" to identify if there are any gaps in our current testing or documentation as a result of the new revision or ammendment.
+          So, I was curious as to what changed in 2020. I like to see what some websites publish because they do a good job of breaking it down so its easier to understand later.
+          But first, google likes to throw its own AI answer at you. It said that the first change was the requirement of the symbol "ISO 7010-M00002". If you look this up on google, you'll see a blue symbol with a person holding a book. This communicates "refer to instruction manual/booklet".
+          I was like nice okay cool we already have that. But, I as I clicked on a couple of links to see what they said, I saw no mention of this symbol. So I went to the gemini response and saw the sources. It had cited ISO 60601-1-2 thinking that it was citing ISO60601-1 ammendment 2.
+          Once again, a great example as to why one should never rely on AI in the medical device world.
+        </p>
+
+        <h2>FDAs First AI Warning Letter</h2>
+
+        <p>
+          I first learned about this in the GreenLight Guru Medical Device Podcast Episode 459. It must suck to be the first warning letter for such a controversal topic.
+          I'd never heard of Purolea until this, and I'm sure I'm not alone. Instead of explaining, I've pasted the exact wording from the warning letter:
+        </p>
+
+        <blockquote>
+          During the FDA inspection of your drug manufacturing facility, you stated to FDA investigators that you utilized artificial intelligence (AI) agents to help your firm comply with FDA regulations.
+          Specifically, you used AI to create drug product specifications, procedures, and master production or control records to be in compliance with FDA requirements.
+          <br>
+          If you use AI as an aid in document creation, you must review the AI generated documents to ensure they were accurate and actually compliant with CGMP.
+          Your failure to do so is a violation of 21 CFR 211.22(c). Overreliance on artificial intelligence for your drug manufacturing operations was also documented during the inspection.
+          <b>For example, the FDA investigators found that you had not conducted process validation prior to distribution of your drug products, as required under 21 CFR 211.100, and informed you as such.
+          You replied that you were not aware of the legal requirement, as the AI agent you used, never told you it was required.</b>
+        </blockquote>
+
+        <p>
+          Isn't that insane? And they're the ones who got caught. God knows how many other manufacturers are engaging in the same activity. I'll break this down so that it's a bit easier to understand.
+          You see, when making a drug or a medical device, you typically test a sample rather than testing each individial drug or device. 
+          Thus, you have a process in place for the manufacturing and inspection of your product. A common strategy is that each lot gets sampled to ensure that the batch is good.
+          But it's not enough to just do this. These are medical products. You have to have validated this process of manufacturing and inspection to ensure that it meets "current good manufacturing practices (CGMP)".
+          Purolea essentially had no way to prove that their manufacturing and/or inspection process worked before distributing their device. 
+        </p>
+
+        <h2>Final Thoughts</h2>
+        
+        <p>
+        There are a lot more juicy examples that I could share, but I'll save that for a part 2 I pray never has to be written.
+        I hope that one day there is an AI that is actually somewhat reliable for this type of activity. Part of the reason that medical device companies go through financing issues is because the cost of talent that knows how to navigate these areas is very high.
+        Finding the right people is not easy, finding the money to pay all of them is even harder. From what I've experienced, we have quite some time until this is a reality.
+        Coming full circle, I am planning on removing the supplier quality agreements as controlled documents and adding some wording about AI in them. 
+        While you as a medical device professional may not use AI, there is no guarantee those around you aren't and it is becoming increasingly important to address unmitigated use.
+        </p>
+
+        <p>
+          I hope that you have found my first real article/blog/post insightful in some regards. This is the topic that pushed me to do something with my web domain. Thanks for reading. If there are typos, please excuse them. I had the stupid idea of writing this directly into the compiler.
+        </p>
+
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-current-year>2026</span> Rayan Dharia</p>
+      <a href="../index.html">Home</a>
+    </div>
+  </footer>
+</body>
+</html>
